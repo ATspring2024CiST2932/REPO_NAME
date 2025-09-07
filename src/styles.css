@@ -21,9 +21,14 @@ html,body{
   color:var(--text);
   font:16px/1.6 system-ui, Segoe UI, Roboto, Inter, Arial, sans-serif;
 }
-a{color:var(--accent-blue);text-decoration:none}
-a:hover {
-  color: var(--accent);
+a {
+  text-decoration: none; /* removes underlines */
+  border: none;           /* removes border if any */
+  background: none;       /* clears background if default styled */
+}
+a:hover,
+a:focus {
+  text-decoration: underline; /* or apply your own hover style */
 }
 .wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
 header{
@@ -66,9 +71,11 @@ header{
 ul.clean{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.35rem}
 ul.clean a{display:inline-flex;gap:.5rem;align-items:center}
 .tag {
-  border: 1px solid var(--accent-2);
-  background: rgba(69,123,157,0.1);
-  color: var(--accent-2);
+  border: none;
+  background: rgba(var(--accent-2) 0.1);
+}
+.tag:hover {
+  background: rgba(var(--accent-2) 0.15);
 }
 
 /* Gallery */
