@@ -8,8 +8,8 @@
   --text: #f5f7ff;      /* primary text */
 
   /* Brand: red + blue */
-  --accent: #ff4d5a;    /* red */
-  --accent-2: #5aa8ff;  /* blue (higher contrast) */
+  --accent: #d62828;   /* deeper red (less pink) */
+  --accent-2: #2d7df6; /* vivid blue with good contrast */
 
   --ring: rgba(90, 168, 255, 0.35); /* focus ring */
   --max: 1120px;        /* content width */
@@ -176,3 +176,32 @@ footer { border-top: 1px solid #1f2431; margin-top: 3rem; padding: 2rem 0; color
 /* Utilities */
 .sr-only { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 .muted { color: var(--muted); }
+
+
+
+/* Mobile FAB for Contact */
+@media (max-width: 800px){
+  .contact-fab{
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    z-index: 60;
+    padding: .7rem 1rem;
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    background: linear-gradient(135deg, var(--accent-2), var(--accent));
+    color: #fff !important;
+  }
+  /* don’t underline while floating */
+  .contact-fab:hover,
+  .contact-fab:focus { text-decoration: none; }
+}
+
+/* Keep it inline on larger screens */
+@media (min-width: 801px){
+  .contact-fab{
+    position: static;
+    box-shadow: none;
+    border-radius: .6rem;
+  }
+}

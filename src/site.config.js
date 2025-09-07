@@ -1,7 +1,8 @@
 // src/site.config.js
 const site = {
-	COMPANY_NAME: "Your CNC Co.",
-	COMPANY_TAGLINE_OR_SHORT_DESC: "Precision parts. Outrageous swagger.",
+	COMPANY_NAME: import.meta.env.VITE_COMPANY_NAME || "Your CNC Co.",
+	COMPANY_TAGLINE_OR_SHORT_DESC:
+		import.meta.env.VITE_SITE_DESC || "Precision parts. Outrageous swagger.",
 	ONE_SENTENCE_VALUE_PROP:
 		"Our CNCs cut tighter than grandma's cookie tin lid.",
 	MATERIAL_1: "6061-T6 aluminum",

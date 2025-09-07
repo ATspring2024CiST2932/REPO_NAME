@@ -22,7 +22,7 @@ export default function Header() {
             <a className="btn" href="#services">Services</a>
             <a className="btn" href="#products">Products</a>
             <a className="btn" href="#gallery">Pictures</a>
-            <a className="btn primary" href="#contact">Contact</a>
+            <a className="btn primary contact-fab" href="#contact">Contact</a>
           </div>
         </nav>
       </div>
