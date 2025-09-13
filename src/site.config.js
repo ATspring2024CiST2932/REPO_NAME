@@ -1,6 +1,6 @@
 // src/site.config.js
 const site = {
-	COMPANY_NAME: import.meta.env.VITE_COMPANY_NAME || "Your CNC Co.",
+	COMPANY_NAME: import.meta.env.VITE_COMPANY_NAME || "Precision CNC Georgia",
 	COMPANY_TAGLINE_OR_SHORT_DESC:
 		import.meta.env.VITE_SITE_DESC || "Precision parts. Outrageous swagger.",
 	ONE_SENTENCE_VALUE_PROP:
