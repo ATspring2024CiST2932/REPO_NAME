@@ -1,4 +1,4 @@
-/* /* =========================
+/* =========================
    THEME / TOKENS
    ========================= */
 :root {
@@ -204,25 +204,4 @@ footer { border-top: 1px solid #1f2431; margin-top: 3rem; padding: 2rem 0; color
     box-shadow: none;
     border-radius: .6rem;
   }
-} */
-
-:root {
-  --bg: #f4f6fb;        /* light gray page background */
-  --card: #ffffff;      /* white cards */
-  --muted: #5b647a;     /* readable secondary text */
-  --text: #111827;      /* strong dark text */
-
-  --accent: #d62828;    /* red */
-  --accent-2: #1f5edc;  /* deeper CNC blue */
-
-  --ring: rgba(31, 94, 220, 0.25);
-  --max: 1120px;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 16px/1.6 system-ui, Segoe UI, Roboto, Inter, Arial, sans-serif;
 }
