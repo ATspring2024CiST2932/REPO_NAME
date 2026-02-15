@@ -5,8 +5,8 @@ export default function Hero() {
     <section className="hero wrap">
       <img
         className="hero-logo"
-        src="/main-logo.png"
-        alt={site.COMPANY_NAME}
+        src={`${import.meta.env.BASE_URL}pcg-logo-full.png`}
+        alt="Precision CNC Georgia"
       />
       <span className="eyebrow">Precision • Prototypes • Production</span>
       <h1>{site.COMPANY_NAME} — {site.ONE_SENTENCE_VALUE_PROP}</h1>

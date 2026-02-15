@@ -65,6 +65,13 @@ header {
 .brand svg { width: 40px; height: 40px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.12)); stroke: var(--accent); }
 .brand .name { font-weight: 700; letter-spacing: .4px; }
 
+/* Header logo image (pcg-mark.png) */
+.brand .logo {
+  height: 42px; /* <- adjust this to change header logo size */
+  width: auto;
+  display: block;
+}
+
 /* Top-right links: look like text, not buttons */
 .links { display: flex; gap: 1rem; flex-wrap: wrap; }
 .links .btn {
@@ -91,9 +98,17 @@ header {
 }
 .btn.primary:hover { filter: brightness(1.05); }
 
+
 /* =========================
    HERO
    ========================= */
+/* Hero logo (pcg-logo-full.png) */
+.hero-logo {
+  display: block;
+  width: min(360px, 90%); /* <- adjust 360px to change hero logo size */
+  height: auto;
+  margin: 0 0 1rem;
+}
 .hero { padding: 5rem 0 3rem; position: relative; overflow: hidden; }
 .hero h1 { font-size: clamp(2rem, 3.7vw, 3rem); line-height: 1.15; margin: .5rem 0; color: var(--text); }
 .hero p { color: var(--muted); max-width: 62ch; }

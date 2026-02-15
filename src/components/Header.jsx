@@ -7,8 +7,8 @@ export default function Header() {
         <nav className="nav">
           <a className="brand" href="#top" aria-label={`${site.COMPANY_NAME} home`}>
             <img
-              src="/logo.svg"
-              alt={`${site.COMPANY_NAME} logo`}
+              src={`${import.meta.env.BASE_URL}pcg-mark.png`}
+              alt="Precision CNC Georgia logo"
               className="logo"
             />
             <div className="name">{site.COMPANY_NAME}</div>
