@@ -3,6 +3,11 @@ import site from "../site.config.js"
 export default function Hero() {
   return (
     <section className="hero wrap">
+      <img
+        className="hero-logo"
+        src="/main-logo.png"
+        alt={site.COMPANY_NAME}
+      />
       <span className="eyebrow">Precision • Prototypes • Production</span>
       <h1>{site.COMPANY_NAME} — {site.ONE_SENTENCE_VALUE_PROP}</h1>
       <p>
@@ -19,9 +24,9 @@ export default function Hero() {
       <figure className="hero-art" aria-hidden="true">
         <svg width="520" height="520" viewBox="0 0 520 520">
           <defs>
-            <linearGradient id="g" x1="0" x2="1">
-              <stop stopColor={getComputedStyle(document.documentElement).getPropertyValue('--accent')} />
-              <stop offset="1" stopColor={getComputedStyle(document.documentElement).getPropertyValue('--accent-2')} />
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop stopColor="var(--accent)" />
+              <stop offset="1" stopColor="var(--accent-2)" />
             </linearGradient>
           </defs>
         <g fill="none" stroke="url(#g2)" opacity=".8">

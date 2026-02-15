@@ -6,16 +6,11 @@ export default function Header() {
       <div className="wrap">
         <nav className="nav">
           <a className="brand" href="#top" aria-label={`${site.COMPANY_NAME} home`}>
-            <svg viewBox="0 0 64 64" role="img" aria-label="CNC gear logo">
-              <defs>
-                <linearGradient id="g" x1="0" x2="1">
-                  <stop stopColor={getComputedStyle(document.documentElement).getPropertyValue('--accent')} />
-                  <stop offset="1" stopColor={getComputedStyle(document.documentElement).getPropertyValue('--accent-2')} />
-                </linearGradient>
-              </defs>
-              <circle cx="32" cy="32" r="26" fill="none" stroke="url(#g)" strokeWidth="3"/>
-              <path d="M20 34h24M24 26h16" stroke="url(#g)" strokeWidth="3" strokeLinecap="round"/>
-            </svg>
+            <img
+              src="/logo.svg"
+              alt={`${site.COMPANY_NAME} logo`}
+              className="logo"
+            />
             <div className="name">{site.COMPANY_NAME}</div>
           </a>
           <div className="links" role="navigation" aria-label="Primary">
